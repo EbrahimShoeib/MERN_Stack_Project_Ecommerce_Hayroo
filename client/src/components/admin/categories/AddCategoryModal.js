@@ -10,7 +10,7 @@ const AddCategoryModal = (props) => {
   );
 
   const [fData, setFdata] = useState({
-    cName: "",
+    cName: " " ,
     cDescription: "",
     cImage: "",
     cStatus: "Active",

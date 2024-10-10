@@ -4,12 +4,13 @@ const apiURL = process.env.REACT_APP_API_URL;
 export const getAllProduct = async () => {
   try {
     let res = await axios.get(`${apiURL}/api/product/all-product`);
+    // let res = await axios.get ("https://fakestoreapi.com/products")
     return res.data;
   } catch (error) {
     console.log(error);
   }
 };
-
+  
 export const createPorductImage = async ({ pImage }) => {
   /* Most important part for uploading multiple image  */
   let formData = new FormData();

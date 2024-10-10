@@ -16,7 +16,7 @@ const apiURL = process.env.REACT_APP_API_URL;
 
 const ProductDetailsSection = (props) => {
   let { id } = useParams();
-
+console.log(id);
   const { data, dispatch } = useContext(ProductDetailsContext);
   const { data: layoutData, dispatch: layoutDispatch } =
     useContext(LayoutContext); // Layout Context
@@ -96,13 +96,7 @@ const ProductDetailsSection = (props) => {
   }
   return (
     <Fragment>
-      <Submenu
-        value={{
-          categoryId: sProduct.pCategory._id,
-          product: sProduct.pName,
-          category: sProduct.pCategory.cName,
-        }}
-      />
+     
       <section className="m-4 md:mx-12 md:my-6">
         <div className="grid grid-cols-2 md:grid-cols-12">
           <div className="hidden md:block md:col-span-1 md:flex md:flex-col md:space-y-4 md:mr-2">

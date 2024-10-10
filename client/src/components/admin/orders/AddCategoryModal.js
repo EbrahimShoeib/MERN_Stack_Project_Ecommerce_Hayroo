@@ -59,7 +59,7 @@ const AddCategoryModal = (props) => {
         setTimeout(() => {
           setFdata({
             ...fData,
-            cName: "",
+            cName: " ",
             cDescription: "",
             cImage: "",
             cStatus: "Active",
